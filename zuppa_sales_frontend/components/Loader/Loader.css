@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.loading {
+  font-size: 12px;
+  font-weight: 800;
+  display: inline;
+  position: absolute;
+  top: 46%;
+  left: 19%;
+  z-index: 1;
+}
+.logo-loading {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.13;
+}
+.loading span {
+  display: inline-block;
+  margin-right: 3px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.loading06 span {
+  position: relative;
+  color: var(--textLight);
+}
+.loading06 span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  color: var(--textprimary);
+  opacity: 0;
+  transform: rotateY(-90deg);
+  animation: loading06 4s infinite;
+}
+.loading06 span:nth-child(2)::after {
+  animation-delay: 0.2s;
+}
+.loading06 span:nth-child(3)::after {
+  animation-delay: 0.4s;
+}
+.loading06 span:nth-child(4)::after {
+  animation-delay: 0.6s;
+}
+.loading06 span:nth-child(5)::after {
+  animation-delay: 0.8s;
+}
+.loading06 span:nth-child(6)::after {
+  animation-delay: 1s;
+}
+.loading06 span:nth-child(7)::after {
+  animation-delay: 1.2s;
+}
+
+@keyframes loading06 {
+  0%,
+  75%,
+  100% {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  25%,
+  50% {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
+.spin-loader {
+  border: 15px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 15px solid var(--textprimary);
+  border-bottom: 15px solid var(--textprimary);
+  width: 150px;
+  height: 150px;
+  animation: spinner 4s linear infinite;
+  z-index: 1;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

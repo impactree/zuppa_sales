@@ -1,0 +1,72 @@
+.pill_view {
+  font-size: var(--fs12);
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  letter-spacing: .9px;
+  font-weight: 600;
+  /* padding: 2px 10px; */
+  /* text-align: center; commented due to ui mixup*/ 
+  min-width: 65px;
+  border-radius: 20px;
+}
+
+/* Status Pills */
+.success-pill {
+  background-color: #DFF5EC;
+  border-color: #DFF5EC;
+  color: #2F855A;
+  /* dark green */
+}
+
+.danger-pill {
+  background-color: #FDEAEA;
+  border-color: #FDEAEA;
+  color: #E53E3E;
+  /* red */
+}
+
+.draft-pill {
+  background-color: #FFF4DB;
+  border-color: #FFF4DB;
+  color: #D69E2E;
+  /* amber */
+}
+
+.warning-pill {
+  background-color: #FEF3C7;
+  border-color: #FEF3C7;
+  color: #B45309;
+  /* warning orange */
+}
+
+.pending-pill {
+  background-color: #FFF7E0;
+  border-color: #FFF7E0;
+  color: #FBA900;
+  /* pending gold */
+}
+
+/* Location Pills */
+.headoffice-pill {
+  background-color: #045D56;
+  border-color: #045D56;
+  color: #FFFFFF;
+}
+
+.branch-pill {
+  background-color: #7C3AED;
+  border-color: #7C3AED;
+  color: #7C3AED;
+}
+
+.current-pill {
+  background-color: #C58FFF;
+  border-color: #C58FFF;
+  color: #C58FFF;
+}
+
+.permanent-pill {
+  background-color: #007656;
+  border-color: #007656;
+  color: #007656;
+}

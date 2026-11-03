@@ -1,0 +1,29 @@
+.list-group-item {
+  position: relative;
+}
+
+.list-group-item.active {
+  background-color: #ffeeba;
+}
+
+.list-group-item img {
+  width: 30px;
+  height: 30px;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  margin-left: 5px;
+}
+
+.text-warning {
+  font-size: 1.5rem;
+}
+
+.text-muted {
+  color: #6c757d;
+}

@@ -1,0 +1,35 @@
+.custom-pagination {
+  color: rgba(0, 0, 0, 0.54) !important ;
+  font-size: 14px;
+  background: #fff;
+}
+.form-select {
+  background-color: transparent !important;
+  background-position: right 0.15rem center !important;
+  border: none !important;
+  padding: 0px !important;
+  color: rgba(0, 0, 0, 0.54) !important ;
+  font-size: 14px !important;
+}
+.form-select:focus {
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.page-link {
+  background: transparent !important;
+  border: none !important;
+  color: rgba(0, 0, 0, 0.54) !important ;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.page-link:hover {
+  background: lightgray !important;
+  border-radius: 60px !important;
+}
+.page-link:focus {
+  box-shadow: none !important;
+}
+.active-page {
+  font-weight: 900;
+}

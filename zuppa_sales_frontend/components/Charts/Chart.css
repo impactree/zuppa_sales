@@ -1,0 +1,14 @@
+.custom_select_input__control {
+  min-height: 36px !important;
+  font-size: 12px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--black-15, var(--border-color)) !important;
+}
+.css-9ulafk-control{
+    height: 36px !important;
+}
+.trend{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}

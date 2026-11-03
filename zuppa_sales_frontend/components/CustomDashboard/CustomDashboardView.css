@@ -1,0 +1,138 @@
+.analytics_module_container {
+  background-color: var(--white);
+  height: 75vh;
+  overflow-y: auto;
+  cursor: pointer;
+  position: sticky;
+  top: 200px; /* Adjust based on your header height */
+  z-index: 10; /* Make sure it stays above other content */
+}
+
+.location-name {
+  color: var(--textLight);
+}
+.task-preview-btn {
+  border-radius: 40px !important;
+}
+
+.is_radius {
+  text-decoration: none;
+  border-radius: 8px;
+  padding-top: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  border: 0.5px solid var(--border-color);
+  cursor: pointer;
+}
+.is_radius:hover {
+  border: 0.5px solid var(--secondary);
+  background-color: #fba9000d;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.is_radius.active {
+  border: 1px solid var(--secondary);
+  background-color: #fba9000d;
+  color: var(--secondary);
+}
+.is_radius.active .settings-card-title {
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.comment-box {
+  height: 100px;
+}
+
+.comment-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: #fba900;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.delete-group {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  background-color: #fba900;
+  color: white;
+  font-size: 20px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.group-card {
+  border-color: var(--secondary) !important;
+  border-radius: 13px;
+  background: #fba9000d;
+}
+
+.custom-dashboard-action-btns {
+  height: 46px;
+  /* width: 170px; */
+  background-color: #ffffff;
+  border: 1px solid var(--black-15, #b7c2d880);
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+}
+.custom-dashboard-action-btns:hover {
+  background-color: #fffded !important;
+  border: 1px solid var(--secondary) !important;
+}
+
+#dashbaord-pdf {
+  background-color: #f6f5f3 !important;
+}
+
+/* This runs ONLY during PDF export */
+
+.create-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.create-btn {
+  width: 300px !important;
+  /* display: flex !important; */
+}
+
+/* #f6f5f3 */
+
+.hide-in-pdf {
+  display: block;
+}
+.hide-in-pdf.pdf-hide {
+  display: none !important;
+}
+
+/* hidden in normal UI because html2canvas captures computed style only */
+/* .pdf-avoid-break {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+} */
+
+/* Force elements to break on PDF pages */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+}
+
+/* Avoid splitting block elements */
+.widget-pdf-block {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}

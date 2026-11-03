@@ -1,0 +1,119 @@
+/* Overlay */
+.delete-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+}
+
+/* Modal Container */
+.delete-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  height: 170px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+.edit-modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 370px;
+  height: 120px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+}
+
+/* Row - icon + text */
+.delete-content-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.delete-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.delete-text {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.edit-text{
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Buttons row */
+.delete-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+/* Cancel button */
+.delete-cancel-btn {
+  width: 117px;
+  height: 50px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid var(--black-15, #B7C2D880)
+}
+
+/* Delete button */
+.delete-confirm-btn {
+  width: 117px;
+  height: 50px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #f43232;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-cancel-btn:hover,
+.delete-confirm-btn:hover {
+  opacity: 0.9;
+}
+
+.delete-edit-btn {
+  width: 94px;
+  height: 49px;
+  padding: 16px;
+  border-radius: 6px;
+  background: #232538;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-edit-btn:hover {
+  opacity: 0.9;
+}

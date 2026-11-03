@@ -1,0 +1,44 @@
+.dropdownBorder .dropdown-css-businessunit-list.dropdown-menu {
+  width: 100% !important;
+}
+
+.dropdown-css-businessunit-list.dropdown-menu {
+  margin-top: 2px !important;
+  border: none !important;
+  padding: 0px !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(----fs14);
+  line-height: 26px;
+  background-color: var(--bgColor);
+  position: absolute !important;
+  right: 0px !important;
+  top: 0px !important;
+  left: -80px !important;
+}
+
+/* .card {
+  min-height: 300px;
+  max-height: 350px;
+  overflow: hidden;
+} */
+
+.showMore-btn {
+  background-color: var(--textSecondary) !important;
+}
+
+.custom-tooltip .tooltip-inner {
+  background-color: #fff !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 300px;
+  opacity: 1 !important;
+}
+
+.custom-tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #1e1e2f;
+}

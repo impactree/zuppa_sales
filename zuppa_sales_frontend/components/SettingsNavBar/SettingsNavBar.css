@@ -1,0 +1,37 @@
+.is_radius {
+  text-decoration: none;
+  border-radius: 8px;
+  padding-top: 0;
+  transition: 0.3s;
+  border: 1px solid rgb(229 229 229);
+}
+
+.is_radius:hover {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+}
+
+.is_radius.active {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+  color: var(--secondary);
+}
+
+/* .is_radius.active .settings-card-title {
+  color: var(--secondary);
+} */
+
+/* .is_radius.active .settings-card-subtitle {
+  color: var(--secondary);
+} */
+
+.settings-card-title {
+  font-size: 14px;
+  color: var(--textprimary);
+  margin-bottom: 4px;
+  letter-spacing: var(--letterSpacing);
+}
+
+.settings-card-subtitle {
+  color: var(--textLight);
+}

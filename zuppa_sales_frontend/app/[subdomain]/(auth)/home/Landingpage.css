@@ -1,0 +1,582 @@
+/* Workflow Step Cards - Single Row Layout - NO SCROLLING */
+
+.workflow-steps-container {
+    /* Remove overflow-x: auto to prevent scrolling */
+    padding-bottom: 10px;
+}
+
+.workflow-steps-row {
+    display: flex;
+    gap: 12px;
+    /* Slightly increased gap for better spacing */
+    width: 100%;
+    padding: 0 4px;
+    align-items: center;
+    justify-content: space-between;
+    /* Distribute cards evenly */
+}
+
+.workflow-step-item {
+    flex: 1;
+    /* Make each card take equal space */
+    position: relative;
+    min-width: 0;
+    /* Allow cards to shrink if needed */
+}
+
+.workflow-step-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px 12px;
+    /* Adjusted padding for better fit */
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+
+/* Step Number Badge */
+
+.step-number-badge {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    color: rgb(0, 0, 0);
+    background: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    border: 2px solid rgb(49, 213, 104);
+}
+
+.step-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.step-icon-wrapper svg {
+    width: 22px;
+    height: 22px;
+}
+
+.step-title {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+
+/* Green Arrow between cards - INCREASED LENGTH */
+
+.step-arrow {
+    position: absolute;
+    right: -40px;
+    /* Increased from -17px to -22px for longer arrow */
+    top: 22%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: transparent;
+    /* Changed from white to transparent */
+    padding: 4px;
+    /* Slightly increased padding */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workflow-step-item:last-child .step-arrow {
+    display: none;
+}
+
+
+/* Remove status-related styles */
+
+.workflow-step-card.completed,
+.workflow-step-card.in-progress,
+.workflow-step-card.pending {
+    background: white;
+    border-color: #e9ecef;
+}
+
+
+/* Hide status badges */
+
+.step-status-badge {
+    display: none;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 1200px) {
+    .workflow-steps-row {
+        gap: 8px;
+    }
+    .workflow-step-card {
+        padding: 14px 8px;
+    }
+    .step-title {
+        font-size: 12px;
+    }
+    .step-arrow {
+        right: -18px;
+    }
+    .step-arrow svg {
+        width: 24px !important;
+        height: 12px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .workflow-steps-row {
+        gap: 6px;
+    }
+    .workflow-step-card {
+        padding: 12px 6px;
+        min-height: 100px;
+    }
+    .step-title {
+        font-size: 11px;
+        line-height: 1.1;
+    }
+    .step-icon-wrapper svg {
+        width: 20px;
+        height: 20px;
+    }
+    .step-number-badge {
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        top: 8px;
+        right: 6px;
+        background: white;
+        /* Ensure white background on smaller screens too */
+    }
+    .step-arrow {
+        right: -15px;
+    }
+    .step-arrow svg {
+        width: 20px !important;
+        height: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .workflow-steps-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+    .workflow-step-item {
+        flex: 0 0 calc(50% - 6px);
+        max-width: calc(50% - 6px);
+    }
+    .step-arrow {
+        display: none;
+        /* Hide arrows on mobile for cleaner look */
+    }
+}
+
+@media (max-width: 576px) {
+    .workflow-step-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .workflow-step-card {
+        padding: 16px;
+        min-height: 80px;
+    }
+}
+
+
+/* Data Cubes Progress card styling */
+
+.data-cubes-progress-card {
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.progress-icon {
+    width: 40px;
+    height: 40px;
+    background: #fff3cd;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-right {
+    display: flex;
+    gap: 16px;
+}
+
+.status-box {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.status-badge {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.status-count {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .data-cubes-progress-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .progress-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .status-box {
+        flex: 1;
+        min-width: auto;
+    }
+}
+
+
+/* Financial year cards - Updated Layout */
+
+.summary-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+    height: 100%;
+}
+
+
+/* New layout for summary cards - label left, value right */
+
+.summary-card .d-flex {
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.summary-card .d-flex>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary-card .d-flex>div:last-child {
+    text-align: right;
+    margin-left: auto;
+}
+
+
+/* Remove margin from the inner div structure and reorganize */
+
+.summary-card h6 {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.summary-card h4 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.summary-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bg-primary-light {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.bg-warning-light {
+    background-color: rgba(255, 193, 7, 0.1);
+}
+
+.bg-danger-light {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+.bg-success-light {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+
+/* Task status cards - Updated Layout */
+
+.task-status-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+    height: 100%;
+}
+
+
+/* New layout for task status cards - label left, value right */
+
+.task-status-card .d-flex {
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.task-status-card .d-flex>div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.task-status-card .d-flex>div:last-child {
+    text-align: right;
+    margin-left: auto;
+}
+
+.task-status-card h6 {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.task-status-card h5 {
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.task-status-card .d-flex.align-items-center {
+    gap: 8px;
+}
+
+.task-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+
+/* Responsive adjustments for financial year section */
+
+@media (max-width: 768px) {
+    .summary-card .d-flex,
+    .task-status-card .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+    .summary-card .d-flex>div:last-child,
+    .task-status-card .d-flex>div:last-child {
+        text-align: left;
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+/* Tutorial Video Cards - Clean and Professional */
+
+.tutorial-video-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tutorial-video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000;
+    border: none;
+    outline: none;
+}
+
+
+/* Custom video controls styling */
+
+.video-container video::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-container video::-webkit-media-controls-play-button {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+
+/* Fallback for when video doesn't load */
+
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: -1;
+}
+
+
+/* Play button overlay for better UX */
+
+.video-container::after {
+    content: '▶';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 123, 255, 0.8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.tutorial-video-card:hover .video-container::after {
+    opacity: 1;
+}
+
+.video-container video:not([poster])::-webkit-media-controls-panel {
+    display: none;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .tutorial-video-card {
+        height: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tutorial-video-card {
+        height: 160px;
+    }
+    .video-container::after {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+
+/* Alternative placeholder design if video doesn't load */
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.video-placeholder .play-icon {
+    font-size: 48px;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.video-placeholder .video-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+/* Remove conflicting styles */
+
+.tutorial-video-card-simple {
+    display: none !important;
+}

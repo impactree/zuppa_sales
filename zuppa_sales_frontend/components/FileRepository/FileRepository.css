@@ -1,0 +1,361 @@
+.file-repo-container {
+    padding: 0;
+}
+
+.file-repo-header {
+    margin-bottom: 24px;
+}
+
+.file-repo-breadcrumb {
+    font-size: 14px;
+    color: #6B7280;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.file-repo-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0;
+}
+
+/* Search and Filters */
+.file-repo-filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.search-container {
+    position: relative;
+    flex: 2;
+    min-width: 200px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    color: #6B7280;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #F9FAFB;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #FBA900;
+    box-shadow: 0 0 0 3px rgba(251, 169, 0, 0.1);
+}
+
+.search-input::placeholder {
+    color: #9CA3AF;
+}
+
+/* Dropdown Filters */
+.filter-dropdown {
+    position: relative;
+    flex: 1;
+    min-width: 120px;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.filter-button:hover {
+    border-color: #D1D5DB;
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    min-width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #374151;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.dropdown-item:hover {
+    background: #F9FAFB;
+}
+
+.dropdown-item:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown-item:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+/* Results Count */
+.file-repo-results-count {
+    font-size: 14px;
+    color: #6B7280;
+    margin-bottom: 16px;
+}
+
+/* Data Log List */
+.file-repo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.file-repo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px 20px;
+    background: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.file-repo-item:hover {
+    border-color: #FBA900;
+    box-shadow: 0 2px 8px rgba(251, 169, 0, 0.1);
+}
+
+.item-content {
+    flex: 1;
+}
+
+.item-question {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1F2937;
+    margin: 0 0 12px 0;
+    line-height: 1.4;
+}
+
+.item-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 16px;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Frequency tag - orange/yellow */
+.tag-frequency {
+    background: #F2C6441A;
+    color: #FBA900;
+}
+
+/* Business Unit tag - purple */
+.tag-business-unit {
+    background: #AE1AF81A;
+    color: #AE1AF8;
+}
+
+/* Site Location tag - blue */
+.tag-location {
+    background: #2380D31A;
+    color: #2380D3;
+}
+
+/* Module tag - teal */
+.tag-module {
+    background: #0694A21A;
+    color: #0694A2;
+}
+
+/* Tags row - contains tags and status aligned */
+.item-tags-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Status Badge */
+.item-status {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 16px;
+    white-space: nowrap;
+    margin-left: auto;
+    line-height: 1;
+}
+
+.status-completed {
+    background: #ECFDF5;
+    color: #059669;
+}
+
+.status-submitted {
+    background: #EFF6FF;
+    color: #2563EB;
+}
+
+.status-pending {
+    background: #FEF3C7;
+    color: #D97706;
+}
+
+.status-default {
+    background: #F3F4F6;
+    color: #6B7280;
+}
+
+/* Loading State */
+.file-repo-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.file-repo-loading .spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid #E5E7EB;
+    border-top-color: #FBA900;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin-bottom: 12px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.file-repo-loading p {
+    color: #6B7280;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Error State */
+.file-repo-error {
+    text-align: center;
+    padding: 48px;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: 12px;
+}
+
+.file-repo-error p {
+    color: #DC2626;
+    margin: 0 0 12px 0;
+}
+
+.file-repo-error button {
+    color: #DC2626;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Empty State */
+.file-repo-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    color: #6B7280;
+}
+
+.file-repo-empty svg {
+    margin-bottom: 12px;
+    opacity: 0.5;
+}
+
+.file-repo-empty p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .file-repo-filters {
+        flex-direction: column;
+    }
+
+    .search-container {
+        max-width: 100%;
+    }
+
+    .filter-button {
+        width: 100%;
+    }
+
+    .file-repo-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .item-status {
+        align-self: flex-start;
+    }
+}

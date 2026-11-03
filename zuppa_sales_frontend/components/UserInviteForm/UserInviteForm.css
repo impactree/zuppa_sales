@@ -1,0 +1,26 @@
+.userinvite-btn {
+  height: 57px !important;
+  width: 263px !important;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.delete-unit {
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+}
+
+.delete-unit-btn .btn-primary {
+  font-weight: 600 !important;
+  border: transparent !important;
+  color: var(--danger) !important;
+  padding: 0px !important;
+}
+
+.delete-unit-btn .btn-primary h6 {
+  font-size: 14px !important;
+}

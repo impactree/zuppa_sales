@@ -1,0 +1,164 @@
+.rdt_Table {
+    background: transparent !important;
+    min-height: 26vh !important;
+}
+
+.rdt_TableBody {
+    min-height: 56vh !important;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.rdt_TableRow {
+    min-height: 60px !important;
+    height: 100%;
+    border-bottom: none !important;
+}
+
+.clm-data-table {
+    position: relative;
+    height: 100%;
+}
+
+.rdt_TableHeadRow {
+    background-color: var(--textsecondary) !important;
+    min-height: 80px !important;
+    /* Increased height for filters */
+}
+
+.rdt_TableCol {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    border-right: 1px solid var(--border);
+    vertical-align: top !important;
+}
+
+.rdt_TableCell {
+    padding: 10px 25px !important;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.rdt_TableCell:last-child {
+    border-right: none !important;
+}
+
+
+/* Filter Header Styles */
+
+.filter-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.column-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-primary, #333);
+    margin-bottom: 4px;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+}
+
+.filter-input,
+.filter-select {
+    width: 100%;
+    min-width: 100px;
+    padding: 6px 8px;
+    border: 1px solid var(--border, #ddd);
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: var(--white, #fff);
+    color: var(--text-primary, #333);
+    transition: border-color 0.2s ease-in-out;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary, #007bff);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.filter-input::placeholder {
+    color: var(--text-secondary, #666);
+    opacity: 0.7;
+}
+
+.filter-select {
+    cursor: pointer;
+}
+
+
+/* Filter Actions */
+
+.filter-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.clear-filters-btn {
+    padding: 6px 12px;
+    background-color: var(--danger, #dc3545);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.clear-filters-btn:hover {
+    background-color: var(--danger-hover, #c82333);
+}
+
+.table-container {
+    position: relative;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .filter-header {
+        min-width: 100px;
+    }
+    .filter-input,
+    .filter-select {
+        min-width: 80px;
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+    .column-title {
+        font-size: 12px;
+    }
+    .rdt_TableCol {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .rdt_TableCell {
+        padding: 8px 15px !important;
+    }
+}
+
+
+/* Dark mode support */
+
+@media (prefers-color-scheme: dark) {
+    .filter-input,
+    .filter-select {
+        background-color: var(--dark-bg, #2d3748);
+        color: var(--dark-text, #e2e8f0);
+        border-color: var(--dark-border, #4a5568);
+    }
+    .column-title {
+        color: var(--dark-text, #e2e8f0);
+    }
+}

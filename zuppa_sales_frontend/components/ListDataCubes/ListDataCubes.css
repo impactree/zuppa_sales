@@ -1,0 +1,204 @@
+/* .cube-card-container {
+  background-color: white;
+  border-radius: 12px;
+}
+.assign-page-title-container {
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+  background-color: var(--bgColor);
+}
+
+.assign-page-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: -2%;
+  text-align: center;
+}
+.assign-task-btn {
+  height: 49px !important;
+  width: 250px !important;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+.datacube-btns {
+  height: 46px;
+  width: 170px;
+  background-color: transparent !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 50px;
+text-align: center;
+}
+.datacube-btns:not(:disabled):hover {
+  background-color: #FFFDED !important;
+  border: 1px solid var(--secondary) !important;
+}
+.load-more{
+  border: 1px solid var(--border);
+  padding: 2px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54) !important ;
+}
+.custom-tooltip .tooltip-inner {
+  background-color: #fff !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--border);
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 300px;
+  opacity: 1 !important;
+}
+
+.custom-tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #1e1e2f; 
+} */
+
+
+.cube-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 0 16px;
+  gap: 16px;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+}
+
+/* LG */
+@media (min-width: 1300px) {
+  .cube-card-container {
+    height: 100px;
+    /* background-color: red; */
+  }
+  .datacube-details {
+    min-width: 150px;
+    gap: 10px;
+  }
+  .progress-wrapper {
+    min-width: 330px;
+  }
+  .actions-wrapper {
+    display: flex;
+    gap: 12px;
+    min-width: 480px;
+  }
+  .standards-container {
+    min-width: 260px;
+  }
+  .standard-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 60px;
+    border: 1px solid #e4e7ec;
+    height: 42px;
+  }
+}
+
+/* MD */
+@media (min-width: 992px) and (max-width: 1300px) {
+  .cube-card-container {
+    height: 90px;
+  }
+  .datacube-details {
+    min-width: 140px;
+  }
+  .progress-wrapper {
+    min-width: 170px !important;
+  }
+  .standards-container {
+    width: 300px;
+  }
+  .actions-wrapper {
+    display: flex;
+    gap: 15px;
+    min-width: 200px;
+  }
+  .datacube-btns {
+    height: 30px !important;
+    min-width: 130px !important;
+    max-width: 150px !important;
+    font-size: 10px;
+  }
+  .delete-wrapper {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .assign-btns-container {
+    width: 70%;
+    gap: 10px !important;
+  }
+  .cube-details-container {
+    gap: 20px;
+  }
+  .standard-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 60px;
+    border: 1px solid #e4e7ec;
+    height: 35px;
+    max-width: 100px;
+  }
+}
+
+.cube-details-container {
+  width: 35%;
+}
+.assign-btns-container {
+  width: 65%;
+}
+
+.delete-wrapper {
+  /* margin-left: 10px; */
+  display: flex;
+  align-items: center;
+}
+
+.vertical-divider {
+  width: 2px !important;
+  height: 100% !important;
+  background-color: #e4e7ec;
+}
+
+.datacube-btns {
+  height: 40px;
+  min-width: 150px;
+  max-width: 200px;
+  background-color: transparent !important;
+  border: 2px solid #fba900 !important;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.datacube-btns:disabled {
+  border: 1px solid #acacac !important;
+  color: #acacac;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.datacube-btns:disabled svg {
+  color: #acacac !important;
+}
+.datacube-btns:not(:disabled):hover {
+  background-color: #fffded !important;
+  border-color: var(--secondary) !important;
+}

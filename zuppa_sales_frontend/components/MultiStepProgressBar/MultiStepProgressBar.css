@@ -1,0 +1,95 @@
+.indexedStep {
+    color: rgb(190, 190, 190);
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.indexedStep.accomplished {
+    background-color: var(--secondary);
+    color: white;
+    border-style: none;
+}
+
+.RSPBprogressBar {
+    height: 2px;
+    width: 40%;
+    line-height: 0;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    margin: 20px auto;
+}
+
+.RSPBprogressBar .RSPBstep {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    /* transform: translateX(-50%); */
+    transform: translate(-50%, 25%);
+    margin-bottom: 10px;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.RSPBprogressBar .RSPBprogressBarText {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.RSPBprogressBar .RSPBprogression {
+    position: absolute;
+    transition: width 0.3s ease;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    background: var(--secondary);
+    z-index: -1;
+}
+
+.step-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--textprimary);
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 576px) {
+    .RSPBprogressBar {
+        width: 80%;
+        margin: 40px auto !important;
+    }
+    .RSPBprogressBar .RSPBstep {
+        transform: translate(-50%, 32%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .RSPBprogressBar {
+        width: 60%;
+    }
+    .RSPBprogressBar .RSPBstep {
+        transform: translate(-50%, 28%);
+    }
+}

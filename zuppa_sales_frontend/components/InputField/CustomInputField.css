@@ -1,0 +1,14 @@
+.select-error-message{
+  bottom: -18px !important;
+  font-size: 12px !important;
+  color: var(--bs-danger);
+  transition: bottom 0.2s;
+}
+.select-error-message-side{
+  position:absolute;
+  bottom: -18px !important;
+  left: 0px !important;
+  font-size: 12px !important;
+  color: var(--bs-danger);
+  transition: bottom 0.2s;
+}

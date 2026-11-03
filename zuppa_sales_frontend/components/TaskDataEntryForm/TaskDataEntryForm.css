@@ -1,0 +1,107 @@
+.task_module_container{
+    background-color: var(--white);
+}
+.location-name{
+    color: var(--textLight);
+}
+.task-preview-btn{
+    border-radius: 40px !important;
+}
+
+.is_radius {
+    text-decoration: none;
+    border-radius: 8px;
+    padding-top: 0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid var(--border-color);
+    cursor: pointer;
+}
+.is_radius:hover {
+  border: 0.5px solid var(--secondary);
+  background-color: #FBA9000D;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.is_radius.active {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+  color: var(--secondary);
+}
+.is_radius.active .settings-card-title{
+  font-weight:800;
+  font-size: 15px;
+}
+
+.comment-box{
+  height: 100px;
+}
+
+.comment-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: #fba900;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.delete-group {
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  background-color: #fba900;
+  color: white;
+  font-size: 20px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.group-card {
+  border-color: var(--secondary) !important;
+  border-radius: 13px;
+  background: #FBA9000D;
+}
+
+.excel-upload-container{
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 500px;
+  z-index: 9999;
+}
+
+
+.frequency_btn {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.frequency_btn:hover {
+  border: 0.5px solid var(--secondary);
+  background-color: #FBA9000D;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.frequency_btn.active {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+  color: var(--secondary);
+}
+.frequency_btn.active .settings-card-title{
+  font-weight:800;
+  font-size: 15px;
+}

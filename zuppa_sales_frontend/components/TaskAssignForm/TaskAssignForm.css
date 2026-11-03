@@ -1,0 +1,14 @@
+.business-unit-deleteIcon-container{
+    border: 1px solid var(--icon-delete);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.task-invite-btn{
+    width: 192px !important;
+    height: 49px !important;
+    margin-bottom: 20px;
+}
+.modal-content{
+    background-color: var(--white) !important;
+}

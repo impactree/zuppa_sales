@@ -1,0 +1,28 @@
+.modal-content {
+  color: var(--textdark) !important;
+  background-color: var(--white) !important;
+  border-radius: 4px !important;
+  border: none !important;
+  min-width: 550px !important;
+}
+.modal-sm {
+  --bs-modal-width: 550px !important;
+}
+@media screen and (max-width: 540px) {
+  .modal-content {
+    min-width: 320px !important;
+  }
+  .modal-sm {
+    --bs-modal-width: 320px !important;
+  }
+}
+.modal-header {
+  align-items: center;
+  color: var(--primary);
+  border-bottom: none !important; 
+  display: flex;
+  height: 80px !important;
+}
+.modal-header .btn-close {
+  margin-right: 10px !important;
+}

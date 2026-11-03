@@ -1,0 +1,133 @@
+.active-tab{
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+.non-active-tab{
+    color: var(--textLight);
+}
+.non-active-tab:hover{
+    border-bottom: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.analytics_module_container{
+    background-color: var(--white);
+    height: 70vh;
+    /* overflow-y: scroll; */
+    cursor: pointer;
+    position: sticky;
+    top: 200px; /* Adjust based on your header height */
+    z-index: 10; /* Make sure it stays above other content */
+}
+
+.is_radius {
+    text-decoration: none;
+    border-radius: 8px;
+    padding-top: 0;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    border: 0.5px solid var(--border-color);
+    cursor: pointer;
+}
+.is_radius:hover {
+  border: 0.5px solid var(--secondary);
+  background-color: #FBA9000D;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.is_radius.active {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+  /* color: var(--secondary); */
+}
+.is_radius.active .settings-card-title{
+  font-weight:800;
+  font-size: 15px;
+}
+
+.task-frequency-card{
+    /* border: 1px solid var(--border-color); */
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    width: 200px
+}
+
+.task-frequency-card:hover{
+    border: 1px solid var(--secondary);
+    background-color: #FBA9000D;
+    cursor: pointer;
+}
+
+.excel-upload-container{
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 500px;
+  z-index: 9999;
+}
+
+.site-list-container{
+    height: 55vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.module-list-container{
+    height: 55vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.frequency_btn {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.frequency_btn:hover {
+  border: 0.5px solid var(--secondary);
+  background-color: #FBA9000D;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.frequency_btn.active {
+  border: 1px solid var(--secondary);
+  background-color: #FBA9000D;
+  color: var(--secondary);
+}
+.frequency_btn.active .settings-card-title{
+  font-weight:800;
+  font-size: 15px;
+}
+
+
+.assign-menu{
+    position: absolute;
+    left: -100px;
+    /* z-index: 1000; */
+}
+
+/* Optimize module list rendering for performance */
+.module-list-container {
+  contain: layout style paint;
+  will-change: scroll-position;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+/* .module-list-container > div {
+  contain: layout style paint;
+}
+
+.mb-3 {
+  contain: layout;
+} */

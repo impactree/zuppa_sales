@@ -1,0 +1,67 @@
+.is_radius {
+    text-decoration: none;
+    color: var(--textLight);
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: var(--fs-14);
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.is_radius:hover {
+    color: var(--textprimary);
+    font-weight: 600;
+}
+
+.is_radius.active {
+    color: #ffcd1b;
+    border: 1px solid var(--textprimary);
+    background-color: var(--textprimary);
+}
+.header-css {
+    text-decoration: none;
+    color: var(--textLight);
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .header-css:hover {
+    color: var(--textprimary);
+    font-weight: 500;
+  }
+  
+  .header-css.active {
+    color: var(--textprimary);
+    font-weight: 500 !important;
+  }
+  
+  .header-css.active:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .header-css:focus:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .header-css:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .header-css:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -15px;
+    margin-bottom: 10px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }

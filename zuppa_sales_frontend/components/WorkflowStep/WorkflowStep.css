@@ -1,0 +1,119 @@
+/* WorkflowStep.css */
+
+.workflow-step-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.workflow-step-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.workflow-step-card.pending {
+    border-color: #e9ecef;
+}
+
+.workflow-step-card.pending:hover {
+    border-color: #6c757d;
+}
+
+.workflow-step-card.active {
+    border-color: #007bff;
+    background-color: #f8f9ff;
+}
+
+.workflow-step-card.completed {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+
+.workflow-step-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.workflow-step-icon.pending {
+    background-color: #ffc107;
+    color: #ffffff;
+}
+
+.workflow-step-icon.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.workflow-step-icon.completed {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.workflow-step-title {
+    color: #2B3674;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.workflow-step-subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .workflow-step-card {
+        margin-bottom: 16px;
+    }
+    .workflow-step-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .workflow-step-title {
+        font-size: 13px;
+    }
+    .workflow-step-subtitle {
+        font-size: 11px;
+    }
+}
+
+
+/* Focus states for accessibility */
+
+.workflow-step-card:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+.workflow-step-card:focus:not(:focus-visible) {
+    outline: none;
+}
+
+
+/* Animation for status changes */
+
+.workflow-step-card.status-change {
+    animation: statusChange 0.5s ease-in-out;
+}
+
+@keyframes statusChange {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

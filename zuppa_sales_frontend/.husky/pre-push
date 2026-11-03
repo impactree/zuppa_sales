@@ -1,0 +1,4 @@
+npm run lint:fix
+npm run build:local
+npm run test:coverage
+npm run sonar

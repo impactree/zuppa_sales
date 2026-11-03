@@ -1,0 +1,13 @@
+.settings-card-container{
+    background-color: #FFFFFF;
+}
+.settings-subtitle{
+    font-size: 14px;
+    color:#29303F;
+    opacity: 50%;
+    margin: 0;
+}
+.settings-select-container{
+    padding: 16px 18px;
+    border-radius: 6px;
+}

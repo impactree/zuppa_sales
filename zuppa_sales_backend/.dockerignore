@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+logs
+public
+*.log
+*.swp
+*.swo
+.env
+.env.*
+!.env.example

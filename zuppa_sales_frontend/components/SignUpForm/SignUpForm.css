@@ -1,0 +1,46 @@
+.form-check{
+    display:inline;
+}
+.form-check .form-check-input{
+    float: none;
+    margin-right: 10px;
+}
+
+/* .signup-btn-container{
+    margin-top: 38px;
+} */
+.signup-btn{
+    width: 248px !important;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px !important;
+    font-weight: 400;
+}
+.signin-link{
+    margin-top: 38px;
+    font-size: 12px !important;
+}
+.agree-terms{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+
+.magic-link-text{
+    font-size: 14px;
+    color:var(--textprimary);
+    font-weight:600;
+    padding:16px;
+    letter-spacing: 2px;
+}
+/* .signup-form-scroll{
+    height: 500px;
+    overflow-y: scroll;
+} */
+
+@media screen and (max-width: 1400px){
+    .signin-link{
+        margin-top: 10px;
+        font-size: 12px !important;
+    }
+  }

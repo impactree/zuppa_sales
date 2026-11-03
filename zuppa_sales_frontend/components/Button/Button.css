@@ -1,0 +1,86 @@
+.common_solid_button .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--textprimary) !important;
+  padding: 10px 16px !important;
+  color: var(--bgColor) !important;
+  text-align: center;
+  font-weight: 400 !important;
+}
+.common_secondary_button .btn-primary {
+  background-color: var(--hoverColor) !important;
+  border-color: var(--hoverColor) !important;
+  padding: 10px 16px !important;
+  color: var(--textLight) !important;
+  text-align: center;
+  font-weight: 700 !important;
+}
+.common_hallow_button .btn-primary {
+  border: 1px solid var(--border) !important;
+  padding: 10px 16px;
+  color: var(--textLight) !important;
+  text-align: center;
+  background: transparent !important;
+  font-weight: 500;
+}
+
+.common_border_button .btn-primary {
+  border: 1px solid var(--textdark) !important;
+  padding: 10px 16px;
+  color: var(--textdark) !important;
+  text-align: center;
+  background: #fff !important;
+  font-weight: 500;
+  border-radius: 50px !important;
+}
+
+.common_border_button .btn-primary h6{
+  font-size: var(--fs14) !important;
+}
+
+.common_link_button .btn-primary {
+  border: 0px solid var(--border) !important;
+  padding: 10px 16px;
+  /* color: var(--textLight) !important; */
+  color: var(--textsecondary) !important;
+  text-align: center;
+  background: transparent !important;
+  font-weight: 500;
+}
+
+
+.common_hallowdanger_button .btn-primary {
+  border: 1px solid var(--danger) !important;
+  padding: 10px 16px;
+  color: var(--danger) !important;
+  text-align: center;
+  background: transparent !important;
+  font-weight: 500;
+}
+.btn{
+  height: 48px !important;
+  border-radius: 6px !important;
+  /* min-width: 120px !important; */
+}
+
+.common_pill_button .btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--textprimary) !important;
+  border-radius: 40px !important;
+  padding: 10px 16px !important;
+  /* padding: 16px !important; */
+  color: var(--bgColor) !important;
+  text-align: center;
+  /* font-weight: 700 !important; */
+  font-weight: 400 !important;
+}
+
+.btn-text{
+  font-size: 16px !important;
+  font-weight: 400px !important;
+}
+
+@media screen and (max-width: 1400px){
+  .btn-text{
+    font-size: 14px !important;
+  }
+}

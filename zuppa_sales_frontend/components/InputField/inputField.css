@@ -1,0 +1,80 @@
+/* .icon-css {
+  position: absolute !important;
+  right: 20px !important;
+  top: 10px !important;
+  cursor: pointer;
+} */
+
+.icon-css {
+  position: absolute !important;
+  right: 20px !important;
+  top: 17px !important;
+  cursor: pointer;
+}
+
+/* .side-by-side-icon-css {
+  position: absolute !important;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+} */
+
+.side-by-side-icon-css {
+  position: absolute !important;
+  right: 10px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.unit-css {
+  min-height: 48px;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+  top: 31px;
+}
+
+.error-message,
+.error-message-sidelong {
+  position: absolute;
+  bottom: -20px !important;
+  font-size: 11px !important;
+  color: var(--bs-danger);
+  transition: bottom 0.2s;
+}
+
+.error-message-side {
+  position: absolute;
+  bottom: -20px;
+  left: 0px !important;
+  font-size: 11px !important;
+  color: var(--bs-danger);
+  transition: bottom 0.2s;
+}
+
+.border-red {
+  border: 1px solid var(--bs-danger);
+}
+
+.settings-form-input-container {
+  width: 560px !important;
+  height: 46px !important;
+  position: relative;
+}
+@media screen and (max-width: 912px) {
+  .settings-form-input-container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .settings-form-input-container {
+    width: 750px !important;
+    height: 46px !important;
+    position: relative;
+  }
+}
+
+.form-margin-bottom {
+  margin-bottom: 40px;
+}

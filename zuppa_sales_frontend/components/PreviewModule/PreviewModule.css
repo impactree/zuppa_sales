@@ -1,0 +1,43 @@
+.preview-title-container{
+    position: sticky;
+    top: 80px;
+    background-color: var(--bgColor);
+    z-index: 1;
+}
+.preview-page-title{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #94979F;
+}
+.edit-task-btn{
+    height: 49px !important;
+    /* width: 220px !important; */
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px !important;
+    font-weight: 400;
+    margin-right: 30px;
+    color: var(--bs-danger) !important;
+}
+.module-list-container {
+    background-color: var(--white);
+    min-height: 70vh;
+    max-height: 100%;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.invite-assign-btn{
+    height: 49px !important;
+    width: 248px !important;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 16px !important;
+    font-weight: 400;
+    /* margin-bottom: 30px; */
+}
+.secondary-border-top {
+    border-top: 1px solid var(--secondary);
+  }
