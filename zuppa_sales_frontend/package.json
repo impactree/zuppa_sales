@@ -4,12 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:local": "cross-env ENV_FILE=.env next build",
-    "build:dev": "cross-env ENV_FILE=.env.example_dev next build",
-    "build:prod": "cross-env ENV_FILE=.env.example_prod next build",
+    "build": "next build",
     "start": "next start",
-    "deploy:prod": "bash ./deploy.sh prod",
-    "deploy:dev": "bash ./deploy.sh dev",
     "prepare": "husky",
     "precommit": "./.husky/pre-commit",
     "prepush": "./.husky/pre-push",
